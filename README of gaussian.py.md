@@ -1,13 +1,24 @@
-# gaussian filtering with GUI
+# GUIを用いたガウシアンフィルタリング
 
-gaussian.py creates a Gaussian filter with the value given by you and filter the image
+gaussian.pyはトラックバーによって与えられた値によってガウシアンフィルタを作成し、キャプチャした画像をフィルタリングする．
 
-## Description
+## 説明
 
-***DEMO:***
+imageウィンドウにwebカメラから画像をキャプチャし、トラックバーgaussianの値によって15*15の大きさのガウシアンフィルタを作成する．
+また、gaussianの値に1/10をかけているため、計算式内でのガウシアンの値は0~10となっている．
+
+## 使い方
+
+python環境でgaussian.pyを実行すると、imageウィンドウにwebカメラでキャプチャしている画像とトラックバーgaussianが表示される．トラックバーgaussianの値を変えると、リアルタイムでガウシアンフィルタが作成され、キャプチャした画像をフィルタリングする．Escキーを押すと終了する．．
+
+## 依存ライブラリ
+
+import cv2 : opencvを利用する
+
+## 実行の様子
 
 ![demo](https://github.com/Yamakatsu63/process-images-with-GUI/blob/media/gaussian.gif)
 
-## Quote
+## 引用
 
-https://algorithm.joho.info/programming/python/opencv-gaussian-filter-py/
+https://algorithm.joho.info/programming/python/opencv-gaussian-filter-py/ - ガウシアンフィルタの作成方法
