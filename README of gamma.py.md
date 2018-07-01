@@ -13,11 +13,15 @@ python環境でgamma.pyを実行すると、imageウィンドウにwebカメラ�
 ## 依存ライブラリ
 
 import numpy as np : 行列処理を行う
+
 import cv2 : opencvを利用する
+
 from matplotlib import pyplot as plt : グラフをプロットする
+
 import matplotlib.gridspec as gridspec : グラフにグリッドを表示する
 
-***実行の様子:***
+
+## 実行の様子
 
 ![DEMO](https://github.com/Yamakatsu63/process-images-with-GUI/blob/media/gamma.gif)
 
